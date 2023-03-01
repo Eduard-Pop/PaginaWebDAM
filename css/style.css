@@ -1,0 +1,308 @@
+/*STYLE HECHO POR EDUARD POP*/
+@font-face {
+    font-family:"spiderman";
+    src: url("../recursos/spiderman.ttf");
+}
+
+@font-face {
+    font-family: "glitch";
+    src: url("../recursos/glitch.ttf");
+}
+
+/*-----------COSAS QUE NO SE SI VOY A METER----------*/
+
+/*header{
+    width: 100%;
+    height: 160px;
+    top: 0px;
+    position: absolute;
+    left: 0px;
+    color: black;
+}
+
+h1.titulo{
+    top: 0%;
+    font-family: spiderman;
+    text-align: center;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}*/
+
+/*---------FIN DE LAS COSAS QUE NO SE SI VOY A METER----------*/
+
+/*--------------AQUI EMPIEZA LA BARRA DE NAVEGACION---------------*/
+
+body, html{
+    background: black;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    
+}
+div.container{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 25px;
+}
+nav{
+    height: auto;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    height: 55px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: spiderman;
+    font-size: 200%;
+    text-decoration: none;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+li:after {
+    text-align: center;
+    display: block;
+    content: '';
+    border-bottom: solid 2px #AF0000;
+    padding-bottom: 1%;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+}
+
+li:hover:after {
+    text-align: center;
+    transform: scaleX(1);
+}
+
+
+/*-------------AQUI SE ACABA LA BARRA DE NAVEGACION----------------*/
+
+
+img.logo2{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    display: inline;
+}
+div.presentacion{
+    position: relative;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+p.parrafo{
+    display: inline-block;
+    position: absolute;
+    left: 15%;
+    font-family: glitch;
+    color: white;
+    font-size: 200%;
+    top: 20%;
+}
+p.parrafo2{
+    display: inline-block;
+    position: absolute;
+    right: 15%;
+    font-family: glitch;
+    color: white;
+    font-size: 200%;
+    top: 20%;
+}
+div.sobremi{
+    text-align: center;
+    color: white;
+    font-size: 200%;
+}
+p.sobrep{
+    display: inline;
+    font-family: spiderman;
+}
+p.sobrep2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 75%;
+}
+p.novedades{
+    font-size: 300%;
+    font-family: spiderman;
+}
+div.fotos{
+    color: white;
+    text-align: center;
+}
+table{
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+}
+.imagengrande{
+    width: 100%;
+    height: auto;
+}
+
+/*----------------AQUI EMPIEZA EL FOOTER-------------------*/
+
+div.footer{
+    color: white;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+img.logofooter{
+    display: inline-block;
+    float: left;
+}
+h3.terminos{
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+}
+
+/*-------------AQUI ACABA EL FOOTER-------------------------*/
+
+/*--------------------ANIMACION 180º---------------------*/
+.animacion:hover {
+    transition: 1s;
+    -webkit-transition: 1s; /* Safari y Chrome */
+    -moz-transition: 1s; /* Firefox */
+    -ms-transition: 1s; /* Opera */
+    -o-transition: 1s; /* IE 9 */
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+/*-------------------------SE ACABA ANIMACION 180º------------*/
+
+/*-----------ANIMACION ZOOM------------------------*/  
+.fotos2{
+    -webkit-transition:all 1s ease; /* Safari y Chrome */
+    -moz-transition:all 1s ease; /* Firefox */
+    -o-transition:all 1s ease; /* IE 9 */
+    -ms-transition:all 1s ease; /* Opera */
+    }
+.fotos2:hover{
+    -webkit-transform:scale(1.25);
+    -moz-transform:scale(1.25);
+    -ms-transform:scale(1.25);
+    -o-transform:scale(1.25);
+    transform:scale(1.25);
+    }
+    .fotos2{
+    overflow:hidden;
+    }
+/*-----------------SE ACABA ANIMACION ZOOM-----------*/
+/*---------------------EMPIEZA EL @MEDIA--------------*/
+
+/*---------@MEDIA DE LA BARRA DE NAVEGACION----------- */
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        background-color: black;
+        position: fixed;
+        width: 100%;
+        height: 50%;
+        top: 57px;
+        left: -300%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 2;
+        
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    
+    #check:checked ~ ul{
+        left:0;
+    }
+    .presentacion{
+        padding: auto;
+        margin: auto;
+        z-index: 1;
+    }
+    
+}
+/*-----------------FIN @MEDIA DE LA BARRA DE NAVEGACION----------*/
+
+/*--------------------@MEDIA DEL DIV DE PRESENTACION---------------*/
+@media screen and (max-width: 858px) {
+    .desaparecer1{
+        display: inline-block;
+        position: absolute;
+        left: 0%;
+        font-size: 55%;
+        }
+    .desaparecer2{
+        display: inline-block;
+        position: absolute;
+        right: 0%;
+        font-size: 55%;
+        }
+    h3.terminos{
+        font-size: 100%;
+        
+    }
+    nav{
+        display: block;
+    }
+}
+/*----------------------FIN @MEDIA DEL DIV DE PRESENTACION-----------*/
+/*----------------------EMPIEZA @MEDIA DE LA TABLA-------------------*/
+
+@media screen and (max-width: 1440px) {
+    table, thead, tbody, th, td, tr {
+		display: block;
+	}    
+    table {
+        width:100%;
+    }
+    thead {
+        display: none;
+    }
+    tbody td {
+        display: block;
+        text-align:center;
+    }
+    tbody td:before {
+        display: block;
+        text-align:center;
+    }
+    .animacion{
+        width: 100%;
+        height: auto;
+    }
+ }
+/*--------------------------FIN @MEDIA DE LAS TABLAS------------------*/
